@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Lora;
+  src: url(./Fonts/Lora-VariableFont_wght.ttf);
+}
+
+:root {
+  --background-colour: #eae7dc;
+  --secondary-colour: #d8c3a5;
+  --text-colour: #8e8d8a;
+  --main-header: #e85a4f;
+  --secondary-header: #e98074;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: var(--text-colour);
+}
+
+body {
+  background-color: var(--background-colour);
+  font-family: Lora;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.splashScreen {
+  /* display: none; */
+  position: absolute;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  background-color: var(--background-colour);
+}
+
+.animationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.splashHeaderH1 {
+  display: none;
+  font-weight: 200;
+  position: relative;
+  font-size: 82px;
+  color: var(--main-header);
+  margin: 15px;
+}
+
+.splashHeaderH2 {
+  display: none;
+  font-weight: 200;
+  position: relative;
+  font-size: 40px;
+  color: var(--secondary-header);
+}
+
+.splashHeader h2 {
+  color: var(--secondary-header);
+}
+
+.invisibleStart {
+  display: none;
+}
+
+nav {
+  position: sticky;
+  background-color: var(--background-colour);
+  z-index: 2;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  width: 100vw;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.navHeader {
+  padding-left: 20px;
+  font-size: 45px;
+  color: var(--main-header);
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 20%; */
+  cursor: pointer;
+}
+
+.navLinks a {
+  color: var(--secondary-header);
+  font-size: 110%;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: var(--main-header);
+}
+
+.navLinks a img {
+  width: 30px;
+}
+
+.landing {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.landingImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.landingImages img {
+  height: 100%;
+  margin: 20px;
+}
+
+.showreel {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.showreel h2 {
+  font-size: 200%;
+  color: var(--secondary-header);
+}
+
+.about {
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about h2 {
+  font-size: 200%;
+  color: var(--secondary-header);
+}
